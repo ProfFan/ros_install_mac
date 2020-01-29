@@ -35,4 +35,20 @@ catkin config --install \
 
 Resume the official tutorial at `catkin build xxxx`.
 
+After finishing `catkin build xxx`, do this:
+
+```bash
+for libfile in /opt/ros/melodic/bin/*; do
+./fix_rpath.py $libfile
+done
+
+for libfile in /opt/ros/melodic/lib/*.dylib; do
+./fix_rpath.py $libfile
+done
+
+for libfile in /opt/ros/melodic/lib/*/*; do
+./fix_rpath.py $libfile
+done
+```
+
 You should now have ROS installed, just `source /opt/ros/melodic/setup.zsh` (If you have zsh) to get it in your shell.

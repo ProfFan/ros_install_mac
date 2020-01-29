@@ -1,5 +1,7 @@
 # INSTALL ROS ON MAC
 
+**NOTE: REPORT AN ISSUE IF YOU HAVE A PROBLEM**
+
 First install homebrew and follow the official tutorial
 
 Then stop at `catkin config xxx`, use the following instead:

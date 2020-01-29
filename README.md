@@ -38,6 +38,8 @@ Resume the official tutorial at `catkin build xxxx`.
 After finishing `catkin build xxx`, do this:
 
 ```bash
+pip3 install lief
+
 for libfile in /opt/ros/melodic/bin/*; do
 ./fix_rpath.py $libfile
 done
